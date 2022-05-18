@@ -43,4 +43,39 @@ fn main() {
             },
         }
     }
+    let v = func();
+
+    println!("function call return value: {}", v);
+    println!("function call return value: {}", func1());
+    println!("The result is {}", loop1());
 }
+
+
+fn func() -> i32 {
+    let x = 10;
+    x + 10
+}
+
+fn func1 () -> u32 {
+    return 10;
+}
+
+fn loop1() -> u32 {
+    let mut number = 0;
+    let result = loop {
+        number += 10;
+
+        if number == 20 {
+            break number * 2;
+        }
+    };
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
+
+    return result;
+}
+
+
+
