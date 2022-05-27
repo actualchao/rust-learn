@@ -48,6 +48,8 @@ fn main() {
     println!("function call return value: {}", v);
     println!("function call return value: {}", func1());
     println!("The result is {}", loop1());
+
+    reference();
 }
 
 
@@ -75,6 +77,17 @@ fn loop1() -> u32 {
     println!("LIFTOFF!!!");
 
     return result;
+}
+
+fn reference() {
+    let mut s = String::from("hello world");
+
+    // let s1 = &s;
+    // let s2 = &s;
+
+    let s3 = &mut s;
+
+    println!("{}, and ",  s3);
 }
 
 
