@@ -4,9 +4,12 @@ use std::cmp::Ordering;
 use std::io;
 pub mod aa;
 pub use crate::aa::bb::test;
+mod vector_hello;
+use crate::vector_hello::test_vector;
 
 fn main() {
     test();
+    test_vector::test();
     let apples = 5;
     let panios = 6;
 
