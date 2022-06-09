@@ -2,8 +2,11 @@ use rand::thread_rng;
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
+pub mod aa;
+pub use crate::aa::bb::test;
 
 fn main() {
+    test();
     let apples = 5;
     let panios = 6;
 
@@ -89,6 +92,4 @@ fn reference() {
 
     println!("{}, and ",  s3);
 }
-
-
 
