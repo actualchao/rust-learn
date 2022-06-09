@@ -6,9 +6,12 @@ pub mod aa;
 pub use crate::aa::bb::test;
 mod vector_hello;
 use crate::vector_hello::test_vector;
+mod string;
+use string::string;
 
 fn main() {
     test();
+    string();
     test_vector::test();
     let apples = 5;
     let panios = 6;
