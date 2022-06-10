@@ -1,5 +1,6 @@
 pub mod test_vector {
     pub fn test() {
+        crate::dev_log("vector start");
         // 创建
         let mut vector: Vec<i32> = Vec::new();
         // 默认值创建
@@ -54,5 +55,7 @@ pub mod test_vector {
                 SpreadsheetCell::Float(num) => {println!("vector, {}", num);}
             }
         }
+
+        crate::dev_log("vector end");
     }
 }

@@ -2,20 +2,16 @@ use rand::thread_rng;
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
-pub mod aa;
-pub use crate::aa::bb::test;
-mod vector_hello;
-use crate::vector_hello::test_vector;
-mod string;
-use string::string;
+mod example;
+use example::exec as exec_example;
+mod dev_util;
+pub use dev_util::dev_log;
 
 fn main() {
-    test();
-    string();
-    test_vector::test();
     let apples = 5;
     let panios = 6;
 
+    exec_example();
     print!("{}", apples);
     print!("{}", panios);
 
@@ -27,7 +23,7 @@ fn main() {
     println!("secret_number is {}", secret_number);
 
     loop {
-        println!("guess some number!!!");
+        println!("guess some number!!!!");
         println!("please input you guess.");
         let mut guess = String::new();
 

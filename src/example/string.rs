@@ -1,9 +1,9 @@
 pub fn string() {
-    println!("=================== string start ====================");
+    crate::dev_log("string start");
 
     // 创建
     let mut string = String::new();
-    string = "hello".to_string();
+    // string = "hello".to_string();
     println!("string: {}", string);
     string = String::from("hello2");
     println!("string: {}", string);
@@ -42,5 +42,5 @@ pub fn string() {
     let s = format!("{}-{}-{}", s1, s2, s3);
     println!("s is {}", s);
 
-    println!("=================== string end ====================");
+    crate::dev_log("string end");
 }
