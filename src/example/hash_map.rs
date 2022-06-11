@@ -1,5 +1,6 @@
 use crate::dev_log;
 use std::collections::HashMap;
+
 pub fn map() {
     dev_log("hashMap start");
 
@@ -32,6 +33,14 @@ pub fn map() {
     // change Value
     map.insert(&field_name, String::from("Red"));
     println!("{:?}", map);
+
+    let mut test_map = HashMap::new();
+
+    test_map.insert(String::from("key"), 123);
+    test_map.insert(String::from("key1"), 123);
+    println!("{:?}", test_map);
+    let entry = test_map.entry(String::from("key"));
+    println!("{:?}", entry);
 
     dev_log("hashMap end");
 }
