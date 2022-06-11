@@ -7,6 +7,8 @@ pub use aa::bb::test as aatest;
 mod hash_map;
 use hash_map::map as map_example;
 mod file;
+mod panic;
+
 
 pub fn exec() {
     aatest();
@@ -14,4 +16,5 @@ pub fn exec() {
     file::file();
     map_example();
     test_vector::test();
+    panic::test_pinic();
 }

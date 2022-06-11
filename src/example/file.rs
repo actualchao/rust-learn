@@ -17,7 +17,11 @@ pub fn file() {
   // make some error info to developer
   // res.unwrap();
 
-  res.expect("Failed to open hello.txt");
+  // res.expect("Failed to open hello.txt");
+
+  use std::net::IpAddr;
+
+  let home: IpAddr = "127.0.0.1".parse().unwrap();
 
   crate::dev_log("file done")
 }
