@@ -1,7 +1,7 @@
 pub mod bb;
-pub mod hello;
+pub mod display;
 
-use  hello::main as hello;
+use display::main as hello;
 
 pub fn main() {
     hello()
